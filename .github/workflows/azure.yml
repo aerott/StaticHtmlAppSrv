@@ -1,8 +1,10 @@
 
+# CI on commit to main
+
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore: 
       - '.github/workflows/**'
 
