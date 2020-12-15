@@ -14,7 +14,11 @@ jobs:
     - name: 'Create Artifact'
       uses: montudor/action-zip@v0.1.1
       with:
+<<<<<<< HEAD
         args: zip -qq -r artifact.zip . -x 'README.md' -x '.github' -x '.git'
+=======
+        args: zip -qq -r artifact.zip ./src
+>>>>>>> b262b805a8bb6eac17d48e9d17e0a751d1cf88d4
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
       with:
