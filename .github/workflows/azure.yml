@@ -1,5 +1,10 @@
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths-ignore: 
+      - '.github/workflows/**'
 
 env:
   AZURE_WEBAPP_NAME: StaticHtmlAppSrvGH
