@@ -10,9 +10,9 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 'Bash script test'
-      run: |
-        rm asdfasfasdfdasdfaf
+    #- name: 'Bash script test'
+    #  run: |
+    #    rm asdfasfasdfdasdfaf
     - name: 'Checkout Github Action'
       uses: actions/checkout@v2
     - name: 'Create Artifact'
