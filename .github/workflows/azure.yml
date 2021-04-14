@@ -2,11 +2,13 @@
 # CI on commit to main
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore: 
-      - '.github/workflows/**'
+  pull_request:
+    types: [closed]
+  #push:
+  #  branches:
+  #    - main
+  #  paths-ignore: 
+  #    - '.github/workflows/**'
 
 env:
   AZURE_WEBAPP_NAME: StaticHtmlAppSrvGH
